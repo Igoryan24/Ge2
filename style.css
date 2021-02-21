@@ -790,13 +790,13 @@ body {
     text-align: center;
   }
   .head {
-    font-size: 22px;
+    font-size: 23px;
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
   }
   .description {
-    font-size: 15px;
+    font-size: 17px;
     -ms-flex-item-align: end;
         align-self: flex-end;
     line-height: 1.5;
@@ -979,13 +979,19 @@ body {
     padding: 20px 0;
   }
   .xs-head-category .head {
-    font-size: 15px;
+    font-size: 16px;
     text-align: center;
     color: #ffff;
+    font-weight: bold;
   }
   .xs-head-category .category {
-    /*align-self: center;
-            justify-self: center;*/
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (150px)[7];
+        grid-template-columns: repeat(7, 150px);
+    margin-top: 15px;
+    -ms-grid-row-align: center;
+        align-self: center;
     overflow-x: scroll;
   }
   .xs-head-category .category::-webkit-scrollbar {
@@ -1038,9 +1044,9 @@ body {
     z-index: 2;
   }
   .photo-3 {
-    -ms-grid-column: 5;
+    -ms-grid-column: 2;
     -ms-grid-column-span: 8;
-    grid-column: 5/13;
+    grid-column: 2/10;
     -ms-grid-row: 9;
     -ms-grid-row-span: 6;
     grid-row: 9/15;
@@ -1064,6 +1070,7 @@ body {
   }
   .destination .head {
     font-weight: bold;
+    font-size: 17px;
   }
   .arrowright {
     vertical-align: middle;
